@@ -1,16 +1,16 @@
-package org.network.abstracts.server;
+package org.network.connection.abstracts.server;
 
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.PriorityQueue;
 
-import org.server.client.abstracts.common.AbstractInitConnection;
-import org.server.client.contract.Server;
-import org.server.client.contract.Work;
-import org.server.client.logger.LoggerAPI;
-import org.server.client.thread.ThreadUtilityFactory;
-import org.server.client.thread.WorkerThread;
+import org.logger.LoggerAPI;
+import org.network.connection.abstracts.common.AbstractInitConnection;
+import org.network.connection.contract.Server;
+import org.worker.multithread.contracts.Work;
+import org.worker.multithread.thread.ThreadUtilityFactory;
+import org.worker.multithread.thread.WorkerThread;
 
 public abstract class AbstractServer extends AbstractInitConnection implements Server {
 

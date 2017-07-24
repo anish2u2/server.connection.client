@@ -1,4 +1,4 @@
-package org.network.abstracts.reader;
+package org.network.connection.abstracts.reader;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,8 +7,8 @@ import java.net.Socket;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import org.server.client.contract.Reader;
-import org.server.client.logger.LoggerAPI;
+import org.logger.LoggerAPI;
+import org.network.connection.contract.Reader;
 
 public abstract class AbstractReader implements Reader {
 

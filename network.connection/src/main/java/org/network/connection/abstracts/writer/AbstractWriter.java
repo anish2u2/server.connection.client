@@ -1,11 +1,13 @@
-package org.network.abstracts.writer;
+package org.network.connection.abstracts.writer;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.ref.WeakReference;
 import java.net.Socket;
 
-public abstract class AbstractWriter implements org.network.contract.Writer {
+import org.network.connection.contract.Writer;
+
+public abstract class AbstractWriter implements Writer {
 
 	private WeakReference<Socket> socket;
 	protected WeakReference<OutputStream> stream;

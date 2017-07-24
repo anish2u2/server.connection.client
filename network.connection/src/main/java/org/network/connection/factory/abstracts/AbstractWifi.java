@@ -1,10 +1,10 @@
-package org.network.factory.abstracts;
+package org.network.connection.factory.abstracts;
 
 import java.lang.ref.WeakReference;
 
-import org.network.contract.Client;
-import org.network.contract.Server;
-import org.network.contract.Wifi;
+import org.network.connection.contract.Client;
+import org.network.connection.contract.Server;
+import org.network.connection.contract.Wifi;
 
 public abstract class AbstractWifi implements Wifi {
 

@@ -1,7 +1,7 @@
-package org.network.factory.imple;
+package org.network.connection.factory.imple;
 
-import org.network.factory.abstracts.AbstractStreamFactory;
-import org.network.factory.contracts.StreamFactory;
+import org.network.connection.factory.abstracts.AbstractStreamFactory;
+import org.network.connection.factory.contracts.StreamFactory;
 
 public class StreamFactoryHandler extends AbstractStreamFactory {
 

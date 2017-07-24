@@ -1,4 +1,4 @@
-package org.network.contract;
+package org.network.connection.contract;
 
 public interface RequestListener {
 

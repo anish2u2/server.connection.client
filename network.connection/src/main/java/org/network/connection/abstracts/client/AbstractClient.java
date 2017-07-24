@@ -1,4 +1,4 @@
-package org.network.abstracts.client;
+package org.network.connection.abstracts.client;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -6,10 +6,10 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.util.List;
 
-import org.server.client.abstracts.common.AbstractInitConnection;
-import org.server.client.contract.Client;
-import org.server.client.contract.IpAddressDetail;
-import org.server.client.logger.LoggerAPI;
+import org.logger.LoggerAPI;
+import org.network.connection.abstracts.common.AbstractInitConnection;
+import org.network.connection.contract.Client;
+import org.network.connection.contract.IpAddressDetail;
 
 public abstract class AbstractClient extends AbstractInitConnection implements Client {
 

@@ -1,6 +1,5 @@
-package org.network.contract;
+package org.network.connection.contract;
 
-import java.util.Comparator;
 import java.util.Date;
 
 public interface RequestAware extends Comparable<RequestAware>{

@@ -1,4 +1,4 @@
-package org.network.imple.reader;
+package org.network.connection.imple.reader;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -9,9 +9,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
 
-import org.network.abstracts.reader.AbstractReader;
-import org.network.contract.Reader.RESPONSE_TYPE;
-import org.network.contract.StreamInitializer;
+import org.files.utility.FileUtility;
+import org.logger.LoggerAPI;
+import org.network.connection.abstracts.reader.AbstractReader;
+import org.network.connection.contract.StreamInitializer;
+
+import net.iharder.Base64;
 
 public class ReaderImpl extends AbstractReader {
 

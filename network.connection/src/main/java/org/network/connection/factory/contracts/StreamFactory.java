@@ -1,7 +1,7 @@
-package org.network.factory.contracts;
+package org.network.connection.factory.contracts;
 
-import org.network.contract.Reader;
-import org.network.contract.Writer;
+import org.network.connection.contract.Reader;
+import org.network.connection.contract.Writer;
 
 public interface StreamFactory {
 

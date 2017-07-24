@@ -1,11 +1,14 @@
-package org.network.factory.imple;
+package org.network.connection.factory.imple;
 
-import org.network.contract.Client;
-import org.network.contract.Server;
-import org.network.contract.Wifi;
-import org.network.factory.abstracts.AbstractWifi;
-import org.network.imple.client.ClientImpl;
-import org.network.imple.server.ServerImpl;
+import org.logger.LoggerAPI;
+import org.network.connection.contract.Client;
+import org.network.connection.contract.Server;
+import org.network.connection.contract.Wifi;
+import org.network.connection.factory.abstracts.AbstractWifi;
+import org.network.connection.imple.client.ClientImpl;
+import org.network.connection.imple.server.ServerImpl;
+import org.worker.multithread.contracts.Work;
+import org.worker.multithread.thread.WorkerThread;
 
 public class WifiFactory extends AbstractWifi {
 

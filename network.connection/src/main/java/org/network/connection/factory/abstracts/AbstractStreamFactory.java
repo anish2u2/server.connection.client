@@ -1,14 +1,15 @@
-package org.network.abstracts;
+package org.network.connection.factory.abstracts;
 
 import java.lang.ref.WeakReference;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.network.contract.Reader;
-import org.network.contract.Writer;
-import org.network.factory.contracts.StreamFactory;
-import org.network.imple.reader.ReaderImpl;
-import org.network.imple.writer.WriterImple;
+import org.logger.LoggerAPI;
+import org.network.connection.contract.Reader;
+import org.network.connection.contract.Writer;
+import org.network.connection.factory.contracts.StreamFactory;
+import org.network.connection.imple.reader.ReaderImpl;
+import org.network.connection.imple.writer.WriterImple;
 
 public abstract class AbstractStreamFactory implements StreamFactory {
 

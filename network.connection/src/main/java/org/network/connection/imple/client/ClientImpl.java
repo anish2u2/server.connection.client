@@ -1,9 +1,9 @@
-package org.network.imple.client;
+package org.network.connection.imple.client;
 
-import org.network.abstracts.client.AbstractClient;
-import org.network.contract.Reader;
-import org.network.contract.Writer;
-import org.network.factory.imple.StreamFactoryHandler;
+import org.network.connection.abstracts.client.AbstractClient;
+import org.network.connection.contract.Reader;
+import org.network.connection.contract.Writer;
+import org.network.connection.factory.imple.StreamFactoryHandler;
 
 public class ClientImpl extends AbstractClient {
 

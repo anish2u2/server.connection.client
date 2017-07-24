@@ -1,4 +1,4 @@
-package org.network.abstracts.common;
+package org.network.connection.abstracts.common;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -6,12 +6,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import org.server.client.contract.InitConnection;
-import org.server.client.contract.IpAddressDetail;
-import org.server.client.contract.Work;
-import org.server.client.logger.LoggerAPI;
-import org.server.client.thread.ThreadUtilityFactory;
-import org.server.client.thread.WorkerThread;
+import org.logger.LoggerAPI;
+import org.network.connection.contract.InitConnection;
+import org.network.connection.contract.IpAddressDetail;
+import org.worker.multithread.contracts.Work;
+import org.worker.multithread.thread.ThreadUtilityFactory;
+import org.worker.multithread.thread.WorkerThread;
 
 public abstract class AbstractInitConnection implements InitConnection {
 
@@ -62,8 +62,8 @@ public abstract class AbstractInitConnection implements InitConnection {
 		while (blockingCall) {
 			try {
 				if (threadLocalMap.get("firstWorkerDone") != null && threadLocalMap.get("secondWorkerDone") != null
-						&& (boolean) threadLocalMap.get("firstWorkerDone")
-						&& (boolean) threadLocalMap.get("secondWorkerDone")) {
+						&& (Boolean) threadLocalMap.get("firstWorkerDone")
+						&& (Boolean) threadLocalMap.get("secondWorkerDone")) {
 					break;
 				} else
 					Thread.sleep(1000);

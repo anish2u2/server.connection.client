@@ -1,4 +1,4 @@
-package org.network.imple.writer;
+package org.network.connection.imple.writer;
 
 import java.io.DataOutputStream;
 import java.io.File;
@@ -9,8 +9,10 @@ import java.lang.ref.WeakReference;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import org.log.logger.LoggerAPI;
-import org.network.abstracts.writer.AbstractWriter;
+import org.logger.LoggerAPI;
+import org.network.connection.abstracts.writer.AbstractWriter;
+
+import net.iharder.Base64;
 
 public class WriterImple extends AbstractWriter {
 	private Lock lock;
